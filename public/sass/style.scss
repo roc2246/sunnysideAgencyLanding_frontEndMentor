@@ -40,7 +40,7 @@ body {
 
 #top {
   padding: 2rem;
-  height: 26rem;
+  min-height: 40rem;
   background-color: #3dbeff;
   background-image: url("../images/desktop/image-header.jpg");
   background-size: contain;
@@ -87,15 +87,15 @@ body {
   }
 }
 
-.section {
+.blurb {
   display: flex;
   flex-direction: row;
-  .section_paragraphCard {
+  .blurb_paragraphCard {
     width: 50%;
     height: auto;
-    
+ 
   }
-  .section_img {
+  .blurb_img {
     width: 50%;
     height: auto;
   }
