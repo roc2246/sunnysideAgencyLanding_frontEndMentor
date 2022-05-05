@@ -36,7 +36,6 @@ nav {
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 #top {
@@ -78,12 +77,26 @@ body {
     color: $topColor_header;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .25rem;
+    letter-spacing: 0.25rem;
     margin-top: 4rem;
   }
   svg#arrow {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  .section_paragraphCard {
+    width: 50%;
+    height: auto;
+    
+  }
+  .section_img {
+    width: 50%;
+    height: auto;
   }
 }
