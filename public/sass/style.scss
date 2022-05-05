@@ -1,0 +1,89 @@
+$topColor_header: white;
+$topColor_nav: white;
+$footerColor: #90d4c5;
+$footerColor_nav: #3c8071;
+$footerColor_header: #347b6b;
+$footerColor_socialMedia: #2d7464;
+
+$heading_font: Georgia, "Times New Roman", Times, serif;
+
+/*All Elements*/
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading_font;
+}
+
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+/*Main Content*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#top {
+  padding: 2rem;
+  height: 26rem;
+  background-color: #3dbeff;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  nav#topNav {
+    svg#logo {
+      overflow: visible;
+      margin-top: 0.5rem;
+    }
+    #topNav_links {
+      float: right;
+      a {
+        margin-left: 2.5rem;
+        &:link {
+          color: $topColor_nav;
+        }
+      }
+      #topNav_links_contact {
+        display: inline-block;
+        text-align: center;
+        width: 6rem;
+        font-family: $heading_font;
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 0.75rem;
+      }
+    }
+  }
+  h1 {
+    color: $topColor_header;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .25rem;
+    margin-top: 4rem;
+  }
+  svg#arrow {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

@@ -1,0 +1,62 @@
+/*All Elements*/
+html {
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif; }
+
+nav a {
+  text-decoration: none; }
+
+/*Main Content*/
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+#top {
+  padding: 2rem;
+  height: 26rem;
+  background-color: #3dbeff;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center; }
+  #top nav#topNav svg#logo {
+    overflow: visible;
+    margin-top: 0.5rem; }
+  #top nav#topNav #topNav_links {
+    float: right; }
+    #top nav#topNav #topNav_links a {
+      margin-left: 2.5rem; }
+      #top nav#topNav #topNav_links a:link {
+        color: white; }
+    #top nav#topNav #topNav_links #topNav_links_contact {
+      display: inline-block;
+      text-align: center;
+      width: 6rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-transform: uppercase;
+      color: black;
+      background-color: white;
+      border-radius: 2rem;
+      padding: 0.75rem; }
+  #top h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .25rem;
+    margin-top: 4rem; }
+  #top svg#arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
