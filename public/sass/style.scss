@@ -175,15 +175,12 @@ body {
   }
 }
 #bottomImgs {
-  width: 100%;
-  height: 29rem;
-  background-image: url("../images/desktop/image-gallery-milkbottles.jpg"),
-    url("../images/desktop/image-gallery-orange.jpg"),
-    url("../images/desktop/image-gallery-cone.jpg"),
-    url("../images/desktop/image-gallery-sugarcubes.jpg");
-  background-size: 26%;
-  background-repeat: no-repeat;
-  background-position-x: 0%, 33%, 67%, 100%;
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 25%;
+    height: auto;
+  }
 }
 
 footer {
