@@ -25,6 +25,7 @@ h5 {
 p,
 a {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   line-height: 1.5rem;
 }
 
@@ -90,18 +91,18 @@ body {
 .blurb {
   display: flex;
   flex-direction: row;
-  position: relative;
   .blurb_text {
     background-color: $backgroundColor_blurb;
     width: 50%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 2rem;
+    word-break: break-word;
   }
   .blurb_img {
     width: 50%;
     height: auto;
+    // Use line below to preserve img ratio
+    // object-fit: contain;
   }
 }
 
