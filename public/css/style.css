@@ -112,7 +112,7 @@ body {
   background-color: #fffbf8;
   display: flex;
   flex-direction: column;
-  padding: 8rem; }
+  padding: 4rem; }
   #testimonials h5 {
     text-align: center; }
   #testimonials #testimonial_container {
@@ -139,11 +139,20 @@ body {
     height: auto; }
 
 footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #90d4c5;
   width: 100%;
-  height: 12rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  footer svg {
-    color: #347b6b; }
+  footer nav#bottomNav {
+    margin: 2rem; }
+    footer nav#bottomNav a {
+      margin: 1rem; }
+  footer #socialMedia {
+    margin-top: 4rem; }
+    footer #socialMedia svg {
+      margin-left: 1rem;
+      color: #347b6b; }
