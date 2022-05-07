@@ -25,36 +25,39 @@ body {
 
 #top {
   background-image: url("../images/desktop/image-header.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 1rem;
+  background-position-y: 0rem;
+  width: 100%;
   height: 50rem; }
-  #top nav#topNav svg#logo {
-    overflow: visible; }
-  #top nav#topNav #topNav_links {
-    float: right; }
-    #top nav#topNav #topNav_links a {
-      margin-left: 2rem; }
-      #top nav#topNav #topNav_links a:link {
-        color: white; }
-    #top nav#topNav #topNav_links #topNav_links_contact {
-      text-align: center;
-      width: 6rem;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      text-transform: uppercase;
-      color: black;
-      background-color: white;
-      border-radius: 2rem;
-      padding: 0.75rem; }
+  #top nav#topNav {
+    padding: 3rem; }
+    #top nav#topNav svg#logo {
+      overflow: visible; }
+    #top nav#topNav #topNav_links {
+      float: right; }
+      #top nav#topNav #topNav_links a {
+        margin-left: 2rem; }
+        #top nav#topNav #topNav_links a:link {
+          color: white; }
+      #top nav#topNav #topNav_links #topNav_links_contact {
+        text-align: center;
+        width: 6rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 0.75rem; }
   #top h1 {
     color: white;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.25rem; }
   #top svg#arrow {
-    margin-left: auto;
-    margin-right: auto; }
+    display: block;
+    margin: auto; }
 
 .blurb {
   display: flex;
