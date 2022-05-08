@@ -49,13 +49,13 @@ body {
       #top nav#topNav #topNav_links #topNav_links_contact {
         display: inline-block;
         text-align: center;
-        width: 6rem;
+        width: 7rem;
         font-family: Georgia, "Times New Roman", Times, serif;
         text-transform: uppercase;
         color: black;
         background-color: white;
         border-radius: 2rem;
-        padding: 0.75rem; }
+        padding: 1rem; }
         #top nav#topNav #topNav_links #topNav_links_contact:hover {
           color: white;
           background-color: #6eceff; }
@@ -236,10 +236,36 @@ footer {
       float: right;
       margin-top: .75rem; }
     #top #topNav_mobile_menu {
-      height: 40vh;
-      border: solid;
+      background-color: white;
+      width: 85vw;
+      height: 36vh;
+      top: 15vh;
+      right: 8vw;
       position: absolute;
       z-index: 1; }
+      #top #topNav_mobile_menu #topNav_links--mobile {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        #top #topNav_mobile_menu #topNav_links--mobile a {
+          margin-top: 1rem;
+          margin-bottom: 1rem; }
+        #top #topNav_mobile_menu #topNav_links--mobile #topNav_links_contact {
+          display: inline-block;
+          text-align: center;
+          width: 7rem;
+          margin-top: .5rem;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          text-transform: uppercase;
+          color: black;
+          background-color: #fbd601;
+          border-radius: 2rem;
+          padding: 1rem; }
+          #top #topNav_mobile_menu #topNav_links--mobile #topNav_links_contact:hover {
+            color: white;
+            background-color: #6eceff; }
     #top h1 {
       position: relative;
       z-index: 0; }
