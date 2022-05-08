@@ -235,6 +235,14 @@ footer {
       display: block;
       float: right;
       margin-top: .75rem; }
+    #top #topNav_mobile_menu {
+      height: 40vh;
+      border: solid;
+      position: absolute;
+      z-index: 1; }
+    #top h1 {
+      position: relative;
+      z-index: 0; }
   .blurb {
     display: flex;
     flex-direction: column; }
