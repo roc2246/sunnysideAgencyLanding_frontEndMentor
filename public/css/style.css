@@ -5,14 +5,15 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5 {
-  font-family: Georgia, "Times New Roman", Times, serif; }
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900; }
 
 p,
 a {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
+  font-stretch: condensed;
   line-height: 1.5rem; }
 
 nav a {
@@ -61,10 +62,13 @@ body {
     color: white;
     text-transform: uppercase;
     text-align: center;
+    font-size: 3rem;
     letter-spacing: 0.25rem; }
   #top svg#arrow {
     display: block;
-    margin: auto; }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%; }
 
 .blurb {
   display: flex;
@@ -82,6 +86,8 @@ body {
     margin-right: 10%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; }
+    .blurb .blurb_text h2 {
+      font-size: 2rem; }
     .blurb .blurb_text p {
       color: #9b999c; }
     .blurb .blurb_text a {
@@ -114,24 +120,26 @@ body {
   position: relative; }
   #services .service {
     width: 50%;
-    height: 30rem; }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
     #services .service .service_text {
-      margin-top: 50%; }
-      #services .service .service_text h3,
+      margin-top: 50%;
+      margin-bottom: 5%;
+      margin-left: 28%;
+      margin-right: 28%; }
+      #services .service .service_text h2,
       #services .service .service_text p {
-        text-align: center; }
-      #services .service .service_text p {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 4rem; }
+        text-align: center;
+        word-break: break-word; }
   #services #graphicDesign {
     background-image: url("../images/desktop/image-graphic-design.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center; }
-    #services #graphicDesign h3,
+    #services #graphicDesign h2,
     #services #graphicDesign p {
       color: #295850; }
   #services #photography {
@@ -140,7 +148,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center; }
-    #services #photography h3,
+    #services #photography h2,
     #services #photography p {
       color: #18546c; }
 
@@ -149,10 +157,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 4rem; }
-  #testimonials h5 {
+  #testimonials h3 {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.1rem;
     line-height: 2rem;
     font-weight: bolder;
     color: #9e9da2; }
@@ -204,7 +212,7 @@ footer {
   footer #socialMedia {
     margin-top: 4rem; }
     footer #socialMedia svg {
-      margin-left: 1rem; }
+      margin: 1rem; }
 
 @media only screen and (max-width: 390px) {
   body {
@@ -221,7 +229,9 @@ footer {
     .blurb .blurb_text {
       width: 100%;
       height: auto; }
-      .blurb .blurb_text h2, .blurb .blurb_text p, .blurb .blurb_text a {
+      .blurb .blurb_text h2,
+      .blurb .blurb_text p,
+      .blurb .blurb_text a {
         text-align: center; }
     .blurb .blurb_img {
       width: 100%;
