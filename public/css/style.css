@@ -42,7 +42,10 @@ body {
         margin-left: 2rem; }
         #top nav#topNav #topNav_links a:link {
           color: white; }
+        #top nav#topNav #topNav_links a:visited {
+          color: white; }
       #top nav#topNav #topNav_links #topNav_links_contact {
+        display: inline-block;
         text-align: center;
         width: 6rem;
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -51,6 +54,9 @@ body {
         background-color: white;
         border-radius: 2rem;
         padding: 0.75rem; }
+        #top nav#topNav #topNav_links #topNav_links_contact:hover {
+          color: white;
+          background-color: #6eceff; }
   #top h1 {
     color: white;
     text-transform: uppercase;
@@ -62,13 +68,39 @@ body {
 
 .blurb {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #fffbf8; }
   .blurb .blurb_text {
-    background-color: #fffbf8;
     width: 50%;
     height: auto;
-    padding: 2rem;
-    word-break: break-word; }
+    word-break: break-word;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    .blurb .blurb_text p {
+      color: #9b999c; }
+    .blurb .blurb_text a {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: Georgia, "Times New Roman", Times, serif;
+      text-decoration: none;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      border-bottom: solid;
+      border-radius: 0.2rem;
+      border-bottom-color: #fff7bb;
+      border-width: 0.25rem; }
+      .blurb .blurb_text a:hover {
+        border-bottom-color: #fad800;
+        border-width: 0.4rem; }
+      .blurb .blurb_text a:visited {
+        color: black; }
+  .blurb .blurb_text:nth-child(2) a {
+    border-bottom-color: #ffdad1; }
+    .blurb .blurb_text:nth-child(2) a:hover {
+      border-bottom-color: #ff7062; }
   .blurb .blurb_img {
     width: 50%;
     height: auto; }
@@ -96,6 +128,9 @@ body {
       margin-left: auto;
       margin-right: auto;
       max-height: 4rem; }
+    #services #graphicDesign h3,
+    #services #graphicDesign p {
+      color: #295850; }
   #services #photography {
     background-image: url("../images/desktop/image-photography.jpg");
     background-size: cover;
@@ -107,6 +142,9 @@ body {
       margin-left: auto;
       margin-right: auto;
       max-height: 4rem; }
+    #services #photography h3,
+    #services #photography p {
+      color: #18546c; }
 
 #testimonials {
   background-color: #fffbf8;
@@ -114,22 +152,32 @@ body {
   flex-direction: column;
   padding: 4rem; }
   #testimonials h5 {
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: bolder;
+    color: #9e9da2; }
   #testimonials #testimonial_container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center; }
     #testimonials #testimonial_container .testimonial {
-      width: 20%;
-      height: auto;
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 4rem; }
+      margin-left: 1rem;
+      margin-right: 1rem; }
       #testimonials #testimonial_container .testimonial img {
         border-radius: 50%;
         transform: scale(60%); }
+      #testimonials #testimonial_container .testimonial p {
+        color: #8a898e;
+        text-align: center;
+        word-break: break-word; }
+      #testimonials #testimonial_container .testimonial small {
+        font-weight: bolder;
+        color: #8a898e; }
 
 #bottomImgs {
   display: flex;
@@ -150,9 +198,11 @@ footer {
   footer nav#bottomNav {
     margin: 2rem; }
     footer nav#bottomNav a {
-      margin: 1rem; }
+      margin: 1rem;
+      color: #295850; }
+      footer nav#bottomNav a:visited {
+        color: #295850; }
   footer #socialMedia {
     margin-top: 4rem; }
     footer #socialMedia svg {
-      margin-left: 1rem;
-      color: #347b6b; }
+      margin-left: 1rem; }

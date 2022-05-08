@@ -2,8 +2,12 @@ $topColor_header: white;
 $topColor_nav: white;
 $footerColor: #90d4c5;
 $footerColor_nav: #3c8071;
-$footerColor_header: #347b6b;
 $footerColor_socialMedia: #2d7464;
+$paragraphColor_blurbs: #9b999c;
+$paragraphColor_testimonials: #8a898e;
+$textColor_graphicDesign: #295850;
+$textColor_photography: #18546c;
+$testimonialColor_heading: #9e9da2;
 
 $heading_font: Georgia, "Times New Roman", Times, serif;
 
@@ -81,8 +85,12 @@ body {
         &:link {
           color: $topColor_nav;
         }
+        &:visited {
+          color: $topColor_nav;
+        }
       }
       #topNav_links_contact {
+        display: inline-block;
         text-align: center;
         width: 6rem;
         font-family: $heading_font;
@@ -91,6 +99,10 @@ body {
         background-color: white;
         border-radius: 2rem;
         padding: 0.75rem;
+        &:hover {
+          color: white;
+          background-color: #6eceff;
+        }
       }
     }
   }
@@ -109,18 +121,50 @@ body {
 .blurb {
   display: flex;
   flex-direction: row;
+  background-color: $backgroundColor_blurb;
   .blurb_text {
-    background-color: $backgroundColor_blurb;
     width: 50%;
     height: auto;
-    padding: 2rem;
     word-break: break-word;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    p {
+      color: $paragraphColor_blurbs;
+    }
+    a {
+      font-family: $heading_font;
+      color: $heading_font;
+      text-decoration: none;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      border-bottom: solid;
+      border-radius: 0.2rem;
+      border-bottom-color: #fff7bb;
+      border-width: 0.25rem;
+      &:hover {
+        border-bottom-color: #fad800;
+        border-width: 0.4rem;
+      }
+      &:visited {
+        color: black;
+      }
+    }
+  }
+  .blurb_text:nth-child(2) {
+    a {
+      border-bottom-color: #ffdad1;
+      &:hover {
+        border-bottom-color: #ff7062;
+      }
+    }
   }
   .blurb_img {
     width: 50%;
     height: auto;
-    // Use line below to preserve img ratio
-    // object-fit: contain;
   }
 }
 
@@ -141,9 +185,17 @@ body {
   }
   #graphicDesign {
     @include service("../images/desktop/image-graphic-design.jpg");
+    h3,
+    p {
+      color: $textColor_graphicDesign;
+    }
   }
   #photography {
     @include service("../images/desktop/image-photography.jpg");
+    h3,
+    p {
+      color: $textColor_photography;
+    }
   }
 }
 
@@ -154,23 +206,35 @@ body {
   padding: 4rem;
   h5 {
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: bolder;
+    color: $testimonialColor_heading;
   }
   #testimonial_container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     .testimonial {
-      width: 20%;
-      height: auto;
-      img{
-        border-radius: 50%;
-        transform: scale(60%);
-      }
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      img {
+        border-radius: 50%;
+        transform: scale(60%);
+      }
+      p {
+        color: $paragraphColor_testimonials;
+        text-align: center;
+        word-break: break-word;
+      }
+      small {
+        font-weight: bolder;
+        color: $paragraphColor_testimonials;
+      }
     }
   }
 }
@@ -194,16 +258,19 @@ footer {
   align-items: center;
   nav#bottomNav {
     margin: 2rem;
-    a{
+    a {
       margin: 1rem;
+      color: $textColor_graphicDesign;
+
+      &:visited {
+        color: $textColor_graphicDesign;
+      }
     }
   }
   #socialMedia {
     margin-top: 4rem;
     svg {
       margin-left: 1rem;
-      color: $footerColor_header;
     }
   }
-  
 }
