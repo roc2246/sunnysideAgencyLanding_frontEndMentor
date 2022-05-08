@@ -65,7 +65,7 @@ body {
   nav#topNav {
     padding: 2rem;
     svg#logo {
-      margin-top: .75rem;
+      margin-top: 0.75rem;
       overflow: visible;
     }
     #topNav_links {
@@ -237,7 +237,7 @@ body {
         border-radius: 50%;
         transform: scale(60%);
       }
-      h4{
+      h4 {
         margin-bottom: 1rem;
         margin-top: 1rem;
       }
@@ -301,31 +301,41 @@ footer {
   #top {
     background-image: url("../images/mobile/image-header.jpg");
     height: 35rem;
-    nav#topNav{
-      #topNav_links{
+    nav#topNav {
+      #topNav_links {
         display: none;
       }
     }
     #topNav_mobile--open {
       display: block;
       float: right;
-      margin-top: .75rem;
+      margin-top: 0.75rem;
     }
     #topNav_mobile_menu {
-      background-color: white;
+        background-color: white;
       width: 85vw;
       height: 36vh;
-      top: 15vh;
+      top: 14vh;
       right: 8vw;
       position: absolute;
-      z-index: 1;
-      #topNav_links--mobile{
+      z-index: 1; 
+      #topNav_links--mobile:before {
+        position: absolute;
+        right: 0;
+        top: -2rem;
+        width: .5rem;
+        height: 0;
+        border-top: 2.75rem solid transparent;
+        border-right: 2.5rem solid white;
+        content: ''; 
+      }
+      #topNav_links--mobile {
         margin: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        a{
+        a {
           margin-top: 1rem;
           margin-bottom: 1rem;
         }
@@ -333,7 +343,7 @@ footer {
           display: inline-block;
           text-align: center;
           width: 7rem;
-          margin-top: .5rem;
+          margin-top: 0.5rem;
           font-family: $heading_font;
           text-transform: uppercase;
           color: black;
@@ -347,7 +357,7 @@ footer {
         }
       }
     }
-    h1{
+    h1 {
       position: relative;
       z-index: 0;
     }
@@ -372,7 +382,7 @@ footer {
       p {
         text-align: center;
       }
-      a{
+      a {
         width: 7rem;
         margin-left: auto;
         margin-right: auto;

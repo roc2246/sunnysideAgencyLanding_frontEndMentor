@@ -11,8 +11,8 @@ if (screen.width <= 390) {
   });
 }
 
-const mobileMenu = document.querySelector("#topNav_mobile_menu");
-const mobileMenuToggle = document.querySelector("#topNav_mobile--open");
+const mobileMenu = document.getElementById("topNav_mobile_menu");
+const mobileMenuToggle = document.getElementById("topNav_mobile--open");
 
 mobileMenu.style.display = "none";
 

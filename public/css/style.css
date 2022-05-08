@@ -36,7 +36,7 @@ body {
   #top nav#topNav {
     padding: 2rem; }
     #top nav#topNav svg#logo {
-      margin-top: .75rem;
+      margin-top: 0.75rem;
       overflow: visible; }
     #top nav#topNav #topNav_links {
       float: right; }
@@ -234,15 +234,24 @@ footer {
     #top #topNav_mobile--open {
       display: block;
       float: right;
-      margin-top: .75rem; }
+      margin-top: 0.75rem; }
     #top #topNav_mobile_menu {
       background-color: white;
       width: 85vw;
       height: 36vh;
-      top: 15vh;
+      top: 14vh;
       right: 8vw;
       position: absolute;
       z-index: 1; }
+      #top #topNav_mobile_menu #topNav_links--mobile:before {
+        position: absolute;
+        right: 0;
+        top: -2rem;
+        width: .5rem;
+        height: 0;
+        border-top: 2.75rem solid transparent;
+        border-right: 2.5rem solid white;
+        content: ''; }
       #top #topNav_mobile_menu #topNav_links--mobile {
         margin: 2rem;
         display: flex;
@@ -256,7 +265,7 @@ footer {
           display: inline-block;
           text-align: center;
           width: 7rem;
-          margin-top: .5rem;
+          margin-top: 0.5rem;
           font-family: Georgia, "Times New Roman", Times, serif;
           text-transform: uppercase;
           color: black;
