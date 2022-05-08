@@ -1,17 +1,15 @@
 $topColor_header: white;
 $topColor_nav: white;
-$footerColor: #90d4c5;
+$footerColor_background: #90d4c5;
 $footerColor_nav: #3c8071;
-$footerColor_socialMedia: #2d7464;
-$paragraphColor_blurbs: #9b999c;
-$paragraphColor_testimonials: #8a898e;
-$textColor_graphicDesign: #295850;
-$textColor_photography: #18546c;
+$blurbsColor_text: #9b999c;
+$blurbsColor_background: #fffbf8;
 $testimonialColor_heading: #9e9da2;
+$testimonialColor_nonHeaderText: #8a898e;
+$servicesColor_graphicDesignText: #295850;
+$servicesColor_photographyText: #18546c;
 
 $heading_font: Georgia, "Times New Roman", Times, serif;
-
-$backgroundColor_blurb: #fffbf8;
 
 @mixin service_paragraph {
   p {
@@ -121,7 +119,7 @@ body {
 .blurb {
   display: flex;
   flex-direction: row;
-  background-color: $backgroundColor_blurb;
+  background-color: $blurbsColor_background;
   .blurb_text {
     width: 50%;
     height: auto;
@@ -133,7 +131,7 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     p {
-      color: $paragraphColor_blurbs;
+      color: $blurbsColor_text;
     }
     a {
       font-family: $heading_font;
@@ -187,20 +185,20 @@ body {
     @include service("../images/desktop/image-graphic-design.jpg");
     h3,
     p {
-      color: $textColor_graphicDesign;
+      color: $servicesColor_graphicDesignText;
     }
   }
   #photography {
     @include service("../images/desktop/image-photography.jpg");
     h3,
     p {
-      color: $textColor_photography;
+      color: $servicesColor_photographyText;
     }
   }
 }
 
 #testimonials {
-  background-color: $backgroundColor_blurb;
+  background-color: $blurbsColor_background;
   display: flex;
   flex-direction: column;
   padding: 4rem;
@@ -227,13 +225,13 @@ body {
         transform: scale(60%);
       }
       p {
-        color: $paragraphColor_testimonials;
+        color: $testimonialColor_nonHeaderText;
         text-align: center;
         word-break: break-word;
       }
       small {
         font-weight: bolder;
-        color: $paragraphColor_testimonials;
+        color: $testimonialColor_nonHeaderText;
       }
     }
   }
@@ -250,7 +248,7 @@ body {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $footerColor;
+  background-color: $footerColor_background;
   width: 100%;
   height: auto;
   display: flex;
@@ -260,10 +258,10 @@ footer {
     margin: 2rem;
     a {
       margin: 1rem;
-      color: $textColor_graphicDesign;
+      color: $footerColor_nav;
 
       &:visited {
-        color: $textColor_graphicDesign;
+        color: $footerColor_nav;
       }
     }
   }
