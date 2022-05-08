@@ -113,10 +113,12 @@ body {
   flex-direction: row;
   position: relative; }
   #services .service {
-    width: 50%;
-    height: 30rem; }
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end; }
     #services .service .service_text {
-      margin-top: 50%; }
+      margin-top: 50%;
+      max-height: 20%; }
       #services .service .service_text h3,
       #services .service .service_text p {
         text-align: center; }
