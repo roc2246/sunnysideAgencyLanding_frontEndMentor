@@ -336,8 +336,13 @@ footer {
         align-items: center;
         justify-content: center;
         a {
+          font-size: 1.2rem;
           margin-top: 1rem;
           margin-bottom: 1rem;
+          color: $blurbsColor_text;
+          &:visited {
+            color: $blurbsColor_text;
+          }
         }
         #topNav_links_contact {
           display: inline-block;
@@ -387,6 +392,8 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2rem;
+        padding-left: .75rem;
+        padding-right: 0rem;
       }
     }
     .blurb_img {

@@ -259,8 +259,12 @@ footer {
         align-items: center;
         justify-content: center; }
         #top #topNav_mobile_menu #topNav_links--mobile a {
+          font-size: 1.2rem;
           margin-top: 1rem;
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          color: #9b999c; }
+          #top #topNav_mobile_menu #topNav_links--mobile a:visited {
+            color: #9b999c; }
         #top #topNav_mobile_menu #topNav_links--mobile #topNav_links_contact {
           display: inline-block;
           text-align: center;
@@ -299,7 +303,9 @@ footer {
         width: 7rem;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 2rem; }
+        margin-top: 2rem;
+        padding-left: .75rem;
+        padding-right: 0rem; }
     .blurb .blurb_img {
       width: 100%;
       height: auto; }
